@@ -1,0 +1,168 @@
+/* Importation de la police Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Réinitialisation des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+h3 {
+  margin: 10px 0;
+  color: #007bff;
+}
+
+p {
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #218838;
+}
+
+/* Icônes */
+.card h3::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.card:nth-child(1) h3::before {
+  content: "\f02d"; /* Icône de livre */
+}
+
+.card:nth-child(2) h3::before {
+  content: "\f121"; /* Icône de code */
+}
+
+/* Icône Panier d'achats */
+h1::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f07a"; /* Icône de panier */
+  margin-right: 10px;
+}
+/* Style pour la page de confirmation de paiement */
+.cancel {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.cancel h1 {
+  color: #28a745;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cancel h1::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f560"; /* Icône de validation */
+  color: #28a745;
+  margin-right: 10px;
+}
+/* Style pour la page d'annulation de paiement */
+.completPayment {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.completPayment h1 {
+  color: #dc3545;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.completPayment h1::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f05e"; /* Icône d'avertissement */
+  color: #dc3545;
+  margin-right: 10px;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-link:hover {
+  background: #0056b3;
+}

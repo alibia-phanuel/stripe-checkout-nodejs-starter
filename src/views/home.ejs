@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= message %></h1>
+    <div class="cardBox">
+      <div class="card">
+        <div>
+          <img src="img/node.png" alt="" />
+        </div>
+        <h3>livre sur node.js et express</h3>
+        <p>Prix :$50.00</p>
+        <div class="desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          excepturi architecto placeat dicta tenetur nulla ullam modi, iure
+          aliquam aliquid.
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <img src="img/ts.jpg" alt="" />
+        </div>
+        <h3>livre sur javaScript et typesript</h3>
+        <p>Prix :$20.00</p>
+        <div class="desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          excepturi architecto placeat dicta tenetur nulla ullam modi, iure
+          aliquam aliquid.
+        </div>
+      </div>
+    </div>
+
+    <form action="/checkout" method="post">
+      <input type="submit" value="Passer à la caisse" />
+    </form>
+  </body>
+</html>
